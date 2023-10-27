@@ -1,0 +1,33 @@
+﻿  CCamera.cpp
+  CCollider.cpp
+  CCollisionMgr.cpp
+  CEngine.cpp
+  CEntity.cpp
+  CGuided.cpp
+  CKeyMgr.cpp
+  CLayer.cpp
+  CLevel.cpp
+  CLevelMgr.cpp
+  CMonster.cpp
+  CObj.cpp
+  CComponent.cpp
+  CPathMgr.cpp
+  CPlayer.cpp
+  CProjectile.cpp
+  CTaskMgr.cpp
+  CTimeMgr.cpp
+  func.cpp
+  main.cpp
+  struct.cpp
+  pch.cpp
+LINK : warning C4727: 타임스탬프가 동일한 d:\assotrock49\ar49\coffee\client\x64\release\game.pch PCH가 d:\assotrock49\ar49\coffee\client\x64\release\ccollisionmgr.obj 및 d:\assotrock49\ar49\coffee\client\x64\release\ccollider.obj에 있습니다.  첫 번째 PCH를 사용합니다.
+LINK : warning C4727: 타임스탬프가 동일한 d:\assotrock49\ar49\coffee\client\x64\release\game.pch PCH가 d:\assotrock49\ar49\coffee\client\x64\release\centity.obj 및 d:\assotrock49\ar49\coffee\client\x64\release\cengine.obj에 있습니다.  첫 번째 PCH를 사용합니다.
+LINK : warning C4727: 타임스탬프가 동일한 d:\assotrock49\ar49\coffee\client\x64\release\game.pch PCH가 d:\assotrock49\ar49\coffee\client\x64\release\clayer.obj 및 d:\assotrock49\ar49\coffee\client\x64\release\ckeymgr.obj에 있습니다.  첫 번째 PCH를 사용합니다.
+LINK : warning C4727: 타임스탬프가 동일한 d:\assotrock49\ar49\coffee\client\x64\release\game.pch PCH가 d:\assotrock49\ar49\coffee\client\x64\release\clevelmgr.obj 및 d:\assotrock49\ar49\coffee\client\x64\release\clevel.obj에 있습니다.  첫 번째 PCH를 사용합니다.
+LINK : warning C4727: 타임스탬프가 동일한 d:\assotrock49\ar49\coffee\client\x64\release\game.pch PCH가 d:\assotrock49\ar49\coffee\client\x64\release\cobj.obj 및 d:\assotrock49\ar49\coffee\client\x64\release\cmonster.obj에 있습니다.  첫 번째 PCH를 사용합니다.
+LINK : warning C4727: 타임스탬프가 동일한 d:\assotrock49\ar49\coffee\client\x64\release\game.pch PCH가 d:\assotrock49\ar49\coffee\client\x64\release\cpathmgr.obj 및 d:\assotrock49\ar49\coffee\client\x64\release\ccomponent.obj에 있습니다.  첫 번째 PCH를 사용합니다.
+LINK : warning C4727: 타임스탬프가 동일한 d:\assotrock49\ar49\coffee\client\x64\release\game.pch PCH가 d:\assotrock49\ar49\coffee\client\x64\release\ctaskmgr.obj 및 d:\assotrock49\ar49\coffee\client\x64\release\cprojectile.obj에 있습니다.  첫 번째 PCH를 사용합니다.
+LINK : warning C4727: 타임스탬프가 동일한 d:\assotrock49\ar49\coffee\client\x64\release\game.pch PCH가 d:\assotrock49\ar49\coffee\client\x64\release\func.obj 및 d:\assotrock49\ar49\coffee\client\x64\release\ctimemgr.obj에 있습니다.  첫 번째 PCH를 사용합니다.
+LINK : warning C4727: 타임스탬프가 동일한 d:\assotrock49\ar49\coffee\client\x64\release\game.pch PCH가 d:\assotrock49\ar49\coffee\client\x64\release\struct.obj 및 d:\assotrock49\ar49\coffee\client\x64\release\main.obj에 있습니다.  첫 번째 PCH를 사용합니다.
+CPlayer.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: virtual void __cdecl CPlayer::Overlap(class CCollider *,class CObj *,class CCollider *)" (?Overlap@CPlayer@@UEAAXPEAVCCollider@@PEAVCObj@@0@Z)
+D:\assotrock49\AR49\Coffee\MyGame\bin\game.exe : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.

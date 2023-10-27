@@ -1,0 +1,37 @@
+﻿  CAnim.cpp
+  CAnimator.cpp
+  CBtnUI.cpp
+  CCollider.cpp
+  CCollisionMgr.cpp
+  CComponent.cpp
+  CEditorLevel.cpp
+  CGuided.cpp
+  CLayer.cpp
+  CLevel.cpp
+  CLevelMgr.cpp
+  CMonster.cpp
+D:\assotrock49\AR49\Coffee\Client\CStateMachine.h(48,9): warning C4353: 비표준 확장을 사용했습니다. 함수 식으로 상수 0을 사용했습니다.  '__noop' 내장 함수를 대신 사용하십시오.
+D:\assotrock49\AR49\Coffee\Client\CMonster.cpp(50,53): message : 컴파일되는 함수 템플릿 인스턴스화 'void CStateMachine::AddDataToBlackboard<Vec2>(const std::wstring &,const T &)'에 대한 참조를 확인하세요.
+          with
+          [
+              T=Vec2
+          ]
+  CMovement.cpp
+  CNormalMonIdle.cpp
+  CNormalMonTrace.cpp
+  CObj.cpp
+  CPanelUI.cpp
+  CPlatform.cpp
+  CPlayLevel.cpp
+  CPlayer.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  CProjectile.cpp
+  CState.cpp
+  CStateMachine.cpp
+  CTaskMgr.cpp
+  CTile.cpp
+  CUI.cpp
+  CUIMgr.cpp
+  코드를 생성하고 있습니다...
+  Client.vcxproj -> D:\assotrock49\AR49\Coffee\MyGame\bin\game_debug.exe

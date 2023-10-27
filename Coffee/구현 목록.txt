@@ -1,0 +1,55 @@
+- Level 구조 변경
+- TaskMgr
+  - 누적된 작업을 처리하는 관리자
+
+1. 카메라
+
+2. 충돌
+ - Layer 는 Layer 에 소속되어있는 오브젝트들의 충돌체를 매 프레임마다 등록을 받을 예정
+  - 충돌 중인 물체들 간의 이벤트 처리( BeginOverlap, Overlap, EndOverlap )
+  - 충돌체는 충돌 발생 시 충돌체를 소유하고 있는 오브젝트로 관련 함수를 호출 시킴
+
+3. 삭제 구조
+   - CEntity 에 m_bDead 추가
+   - CObj 에 Destroy 함수 구현
+   - TaskMgr 를 통해서 다음 tick 부터 Dead 상태가 되게 함 -> 본인이 소유하고있는 Component 도 Dead 로 만듬
+   - IsValid 를 통해서 Dead 상태인 오브젝트를 참조하는 포인터의 유효성을 검사 할 수 있음
+  - Dead 상태의 오브젝트는 자신의 상황에맞게 적절한 충돌처리를 받는다.
+  - CEngine tick 마지막에 render 단계에서 모든 오브젝트에 접근할때 겸사겸사 Dead 상태의 오브젝트를
+       Layer 에서 빼버리고 GC 로 보내버린다.
+
+
+4. 이미지 출력
+   - 리소스 관리, 경로 관리
+
+
+5. 애니메이션 재생
+   - 애니메이션 구조
+
+
+6. MovementComopnent 구현
+
+
+7. 타일 기반 맵 제작
+  - 타일 구조 설계
+  - 타일 저장 및 불러오기
+
+
+8. UI 구조 설계
+
+
+9. Save / Load
+
+
+타일 최적화, 저장 / 불러오기
+PNG
+Sound
+AI ( FSM )
+
+
+
+
+
+
+
+

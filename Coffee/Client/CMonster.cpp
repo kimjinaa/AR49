@@ -17,7 +17,7 @@ CMonster::CMonster()
 {
 	m_Collider = AddComponent<CCollider>(L"MonsterCollider");
 	m_Info.HP = 5.f;
-	m_Texture = CAssetMgr::GetInst()->LoadTexture(L"StartTex", L"texture\\MagicCircle_01.png");
+	m_Texture = CAssetMgr::GetInst()->LoadTexture(L"StartTex", L"texture\\Mob\\stand\\state1\\8642105.img.stand.0.png");
 
 
 	// 상태머신 컴포넌트 추가 및 설정

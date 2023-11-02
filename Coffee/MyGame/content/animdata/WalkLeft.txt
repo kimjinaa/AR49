@@ -2,8 +2,8 @@
 WalkLeft
 
 [ATLAS_TEXTURE]
-PlayerAtlas
-texture\link_alpha.bmp
+
+
 
 [FRAME_COUNT]
 10

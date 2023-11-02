@@ -23,7 +23,7 @@ CPlayer::CPlayer()
 	: m_Collider(nullptr)
 	, m_Animator(nullptr)
 	, m_Movement(nullptr)
-{	
+{
 	SetName(L"Player");
 
 	// 애니메이터 컴포넌트 추가
@@ -31,15 +31,15 @@ CPlayer::CPlayer()
 
 	m_Animator = AddComponent<CAnimator>(L"Animator");
 
-	/*m_Animator->CreateAnimation(L"WalkDown", pAtlas, Vec2(0.f, 520.f), Vec2(120, 130), Vec2(0.f, -60.f), 0.05f, 10);
-	m_Animator->CreateAnimation(L"WalkLeft", pAtlas, Vec2(0.f, 650.f), Vec2(120, 130), Vec2(0.f, -60.f), 0.05f, 10);
-	m_Animator->CreateAnimation(L"WalkUp", pAtlas, Vec2(0.f, 780.f), Vec2(120, 130), Vec2(0.f, -60.f), 0.05f, 10);
-	m_Animator->CreateAnimation(L"WalkRight", pAtlas, Vec2(0.f, 910.f), Vec2(120, 130), Vec2(0.f, -60.f), 0.05f, 10);	
-	m_Animator->CreateAnimation(L"IdleDown", pAtlas, Vec2(0.f, 0.f), Vec2(120, 130), Vec2(0.f, -60.f), 0.05f, 3);
-	m_Animator->CreateAnimation(L"IdleLeft", pAtlas, Vec2(0.f, 130.f), Vec2(120, 130), Vec2(0.f, -60.f), 0.05f, 3);
-	m_Animator->CreateAnimation(L"IdleUp", pAtlas, Vec2(0.f, 260.f), Vec2(120, 130), Vec2(0.f, -60.f), 0.05f, 1);
-	m_Animator->CreateAnimation(L"IdleRight", pAtlas, Vec2(0.f, 390.f), Vec2(120, 130), Vec2(0.f, -60.f), 0.05f, 3);
-	m_Animator->SaveAnimations(L"animdata");*/
+	//m_Animator->CreateAnimation(L"WalkDown", pAtlas, Vec2(0.f, 520.f), Vec2(120, 130), Vec2(0.f, -60.f), 0.05f, 10);
+	//m_Animator->CreateAnimation(L"WalkLeft", pAtlas, Vec2(0.f, 650.f), Vec2(120, 130), Vec2(0.f, -60.f), 0.05f, 10);
+	//m_Animator->CreateAnimation(L"WalkUp", pAtlas, Vec2(0.f, 780.f), Vec2(120, 130), Vec2(0.f, -60.f), 0.05f, 10);
+	//m_Animator->CreateAnimation(L"WalkRight", pAtlas, Vec2(0.f, 910.f), Vec2(120, 130), Vec2(0.f, -60.f), 0.05f, 10);	
+	//m_Animator->CreateAnimation(L"IdleDown", pAtlas, Vec2(0.f, 0.f), Vec2(120, 130), Vec2(0.f, -60.f), 0.05f, 3);
+	//m_Animator->CreateAnimation(L"IdleLeft", pAtlas, Vec2(0.f, 130.f), Vec2(120, 130), Vec2(0.f, -60.f), 0.05f, 3);
+	//m_Animator->CreateAnimation(L"IdleUp", pAtlas, Vec2(0.f, 260.f), Vec2(120, 130), Vec2(0.f, -60.f), 0.05f, 1);
+	//m_Animator->CreateAnimation(L"IdleRight", pAtlas, Vec2(0.f, 390.f), Vec2(120, 130), Vec2(0.f, -60.f), 0.05f, 3);
+	//m_Animator->SaveAnimations(L"animdata");
 
 	m_Animator->LoadAnimation(L"animdata\\IdleDown.txt");
 	m_Animator->LoadAnimation(L"animdata\\IdleLeft.txt");
@@ -62,7 +62,7 @@ CPlayer::CPlayer()
 	m_Movement = AddComponent<CMovement>(L"PlayerMovement");
 	m_Movement->SetMass(1.f);
 	m_Movement->SetInitSpeed(200.f);
-	m_Movement->SetMaxSpeed(400.f);		
+	m_Movement->SetMaxSpeed(400.f);
 	m_Movement->SetFrictionScale(1000.f);
 
 	m_Movement->UseGravity(false);
@@ -82,11 +82,11 @@ CPlayer::CPlayer(const CPlayer& _Origin)
 }
 
 CPlayer::~CPlayer()
-{		
+{
 }
 
 void CPlayer::tick(float _DT)
-{	
+{
 	Super::tick(_DT);
 
 	Vec2 vPos = GetPos();
@@ -119,7 +119,7 @@ void CPlayer::tick(float _DT)
 		m_Animator->Play(L"WalkUp", true);
 	}
 	if (KEY_RELEASED(W))
-	{		
+	{
 		m_Animator->Play(L"IdleUp", true);
 	}
 
